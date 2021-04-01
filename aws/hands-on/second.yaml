@@ -1,0 +1,6 @@
+bash-script: |
+  echo "Hello world"
+  export PROFILE="teacher"
+  echo $PROFILE 
+para: |
+  This  sentence  will  be  in  single  line 
