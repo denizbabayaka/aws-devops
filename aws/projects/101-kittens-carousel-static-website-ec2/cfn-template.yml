@@ -21,7 +21,7 @@ Resources:
     Properties:
       ImageId: ami-0742b4e673072066f
       InstanceType: t2.micro
-      KeyName: serdar
+      KeyName: Deniz-clarusway-key
       SecurityGroupIds:
         - !Ref WebServerSecurityGroup
       Tags:
@@ -33,7 +33,7 @@ Resources:
             #! /bin/bash
             yum update -y
             yum install httpd -y
-            FOLDER="https://raw.githubusercontent.com/serdarcw/kittens-carousel-static-website/master/static-web"
+            FOLDER="https://raw.githubusercontent.com/denizbabayaka/aws-devops/main/aws/projects/101-kittens-carousel-static-website-ec2/static-web/index.html"
             cd /var/www/html
             wget $FOLDER/index.html
             wget $FOLDER/cat0.jpg
